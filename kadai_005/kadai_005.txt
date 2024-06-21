@@ -1,0 +1,31 @@
+
+\f0\fs26 \cf0 yamashin262@yamashin262noMacBook-Air: ~/prog \
+$ mkdir git_challenge\
+yamashin262@yamashin262noMacBook-Air: ~/prog \
+$ cd git_challenge \
+yamashin262@yamashin262noMacBook-Air: ~/prog/git_challenge (main #%)\
+$ echo > hello_world.txt\
+yamashin262@yamashin262noMacBook-Air: ~/prog/git_challenge (main #%)\
+$ echo "HelloWorld" >> hello_world.txt\
+yamashin262@yamashin262noMacBook-Air: ~/prog/git_challenge (main #%)\
+$ git add hello_world.txt\
+yamashin262@yamashin262noMacBook-Air: ~/prog/git_challenge (main +%)\
+$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 90e58b5] hello_world.txt\uc0\u12434 \u36861 \u21152 \
+ 1 file changed, 3 insertions(+)\
+ create mode 100644 hello_world.txt\
+yamashin262@yamashin262noMacBook-Air: ~/prog/git_challenge (main %)\
+$ echo "こんにちは、世界！" >> hello_world.txt\
+yamashin262@yamashin262noMacBook-Air: ~/prog/git_challenge (main +%)\
+$ git commit -m "日本語訳を追記"
+[main (root-commit) 90e58b5] hello_world.txt\uc0\u12434 \u36861 \u21152 \
+ 1 file changed, 3 insertions(+)\
+ create mode 100644 hello_world.txt\
+yamashin262@yamashin262noMacBook-Air: ~/prog/git_challenge (main %)\
+$ cat hello_world.txt\
+HelloWorld
+こんにちは、世界！
+yamashin262@yamashin262noMacBook-Air: ~/prog/git_challenge (main %)\
+$ git tree\
+*        4fa61e2  2024/06/21 22:11:40   yamashin262     日本語訳を追記  (HEAD -> main)
+*        90e58b5  2024/06/21 22:08:37   yamashin262     hello_world.txtを追加
